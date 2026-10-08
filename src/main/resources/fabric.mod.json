@@ -3,15 +3,15 @@
 	"id": "bedrock-miner",
 	"version": "${version}",
 	"name": "Bedrock Miner",
-	"description": "Lets a netherite pickaxe mine bedrock.",
+	"description": "Lets a netherite pickaxe mine bedrock, including the bottom layer of the Overworld. Takes 2 minutes, sped up by Efficiency and Haste, and the bedrock drops as a block.",
 	"authors": [
-		"Me!"
+		"seigmannen"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Seigmannen/bedrock-miner",
+		"sources": "https://github.com/Seigmannen/bedrock-miner"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/bedrock-miner/icon.png",
 	"environment": "*",
 	"entrypoints": {
