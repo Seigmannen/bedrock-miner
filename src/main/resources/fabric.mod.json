@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "bedrock-miner",
+	"version": "${version}",
+	"name": "Bedrock Miner",
+	"description": "Lets a netherite pickaxe mine bedrock.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bedrock-miner/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.seigmannen.bedrockminer.BedrockMiner"
+		],
+		"client": [
+			"com.seigmannen.bedrockminer.client.BedrockMinerClient"
+		]
+	},
+	"mixins": [
+		"bedrock-miner.mixins.json",
+		{
+			"config": "bedrock-miner.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
